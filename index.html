@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dapur Mom's Shila - Food Catering Service</title>
+    <style>
+        body {
+            font-family: 'Poppins', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7e4d4;
+            background-image: linear-gradient(to bottom, #ffffff 60%, #f7e4d4 100%);
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: #333;
+            transition: background-color 0.3s ease;
+        }
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            background-color: #fff7e6;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transform: translateY(-20px);
+            animation: fadeIn 1s ease-out;
+        }
+        header img {
+            max-width: 150px;
+            border-radius: 50%;
+        }
+        header h1 {
+            margin-top: 20px;
+            font-size: 3.5em;
+            color: #ff9900;
+            font-weight: bold;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+        header p {
+            font-size: 1.5em;
+            color: #555;
+            margin-top: 10px;
+            font-weight: 300;
+        }
+        nav {
+            background-color: #ffcc00;
+            display: flex;
+            justify-content: center;
+            padding: 15px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 30px;
+            font-size: 20px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: transform 0.3s ease, color 0.3s ease;
+        }
+        nav a:hover {
+            color: #ff6600;
+            transform: translateY(-5px);
+        }
+        .container {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .menu-section h2 {
+            color: #ff9900;
+            text-align: center;
+            font-size: 2.8em;
+            margin-bottom: 20px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        .menu-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 30px;
+            justify-items: center;
+            margin-top: 30px;
+        }
+        .menu-item {
+            background-color: white;
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 15px;
+            width: 100%;
+            text-align: center;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .menu-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+        .menu-item img {
+            max-width: 100%;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            transition: transform 0.3s ease;
+        }
+        .menu-item img:hover {
+            transform: scale(1.05);
+        }
+        .menu-item h3 {
+            color: #ff9900;
+            font-size: 20px;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+        .menu-item p {
+            color: #666;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        .menu-item p.price {
+            font-weight: bold;
+            color: #333;
+            font-size: 18px;
+            margin-top: 10px;
+        }
+       .contact-section {
+            text-align: center;
+            background-color: #ffcc00;
+            color: green;
+            padding: 40px 20px;
+            border-radius: 10px;
+            margin-top: 60px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-section h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        .contact-section p {
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+
+        .contact-section a {
+            color: green;
+            font-weight: bold;
+            text-decoration: underline;
+            transition: color 0.3s ease;
+        }
+
+        .contact-section a:hover {
+            color: #ff9900;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+            font-size: 14px;
+            font-weight: 300;
+        }
+        footer p {
+            margin: 0;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="Dapurmom's.png" alt="Logo Dapur Mom's Shila">
+        <h1>Dapur Mom's Shila</h1>
+        <p>Delicious Food Catering Service for All Occasions</p>
+    </header>
+    <nav>
+        <a href="#menu">Menu</a>
+        <a href="#contact">Contact Us</a>
+    </nav>
+    <div class="container">
+        <section id="menu" class="menu-section">
+            <h2>Our Menu</h2>
+            <div class="menu-list">
+                <div class="menu-item">
+                    <img src="Sambal_tongkol_suwir.jpg" alt="Sambal Tongkol Suwir">
+                    <h3>Sambal Tongkol Suwir</h3>
+                    <p>Rp25.000,00</p>
+                </div>
+                <div class="menu-item">
+                    <img src="Paket_nasi_ayam_bakar.jpg" alt="Paket Nasi Ayam Bakar">
+                    <h3>Paket Nasi Ayam Bakar</h3>
+                    <p>Rp20.000,00</p>
+                </div>
+                <div class="menu-item">
+                    <img src="bubur_ayam.jpg" alt="Bubur Ayam">
+                    <h3>Bubur Ayam</h3>
+                    <p>Rp10.000,00</p>
+                </div>
+                <div class="menu-item">
+                    <img src="bawang_goreng_crispy.jpg" alt="Bawang Goreng Crispy">
+                    <h3>Bawang Goreng Crispy</h3>
+                    <p>Rp30.000,00</p>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="contact-section">
+            <h2>Contact Us</h2>
+            <p>For orders or inquiries, reach us on WhatsApp:</p>
+            <p><a href="https://wa.me/08158293383" target="_blank" style="color: green;">Klik disini untuk WhatsApp</a></p>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 Dapur Mom's Shila. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
